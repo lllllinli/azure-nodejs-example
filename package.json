@@ -1,6 +1,6 @@
 {
   "name": "azure-nodejs-example",
-  "engines":{"node": "5.8.0"},
+  "engines":{"node": "0.6.22 || 0.8.x"},
   "version": "1.0.0",
   "description": "test Nodejs in Microsoft Azure Web App Service",
   "main": "server.js",
