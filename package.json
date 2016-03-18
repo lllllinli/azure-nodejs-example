@@ -1,0 +1,30 @@
+{
+  "name": "azure-nodejs-example",
+  "version": "1.0.0",
+  "description": "test Nodejs in Microsoft Azure Web App Service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lllllinli/azure-nodejs-example.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Microsoft",
+    "Azure",
+    "web",
+    "app"
+  ],
+  "author": "Standley Lin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lllllinli/azure-nodejs-example/issues"
+  },
+  "homepage": "https://github.com/lllllinli/azure-nodejs-example#readme",
+  "dependencies": {
+    "koa": "^1.2.0"
+  }
+}

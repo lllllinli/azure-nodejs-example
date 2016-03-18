@@ -1,6 +1,13 @@
-var http = require('http')
-var port = process.env.PORT || 1337;
-http.createServer(function(req, res) {
-	  res.writeHead(200, { 'Content-Type': 'text/plain' });
-	    res.end('Micosoft Azure - Node Js demo.\n');
-}).listen(port);
+var koa = require('koa');
+var app = koa();
+
+console.log('task :: start web app -');
+
+app.use(function *(){
+	console.log('task :: router -');
+  this.body = 'Hello World';
+});
+
+app.listen(3000,function (){
+	console.log('task :: port 30000 -');
+});
