@@ -1,13 +1,10 @@
-var koa = require('koa');
-var app = koa();
+var express = require('express');
+var app = express();
 
-console.log('task :: start web app -');
-
-app.use(function *(){
-	console.log('task :: router -');
-  this.body = 'Hello World';
+app.get('/', function (req, res) {
+	  res.send('Hello World!');
 });
 
-app.listen(3000,function (){
-	console.log('task :: port 30000 -');
+app.listen(3000, function () {
+	  console.log('Example app listening on port 3000!');
 });
