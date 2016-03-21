@@ -1,10 +1,5 @@
-var express = require('express');
-var app = express();
-
-app.get('/', function (req, res) {
-	  res.send('Hello World!');
-});
-
-app.listen(1337, function () {
-	  console.log('Example app listening on port 3000!');
-});
+var http = require('http');
+http.createServer(function(req,res) {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end('Hello from Azure running node version: ' + process.version + '</br>');
+}).listen(process.env.PORT || 3000);
