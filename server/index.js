@@ -15,7 +15,7 @@ var koa = require('koa');
 var app = koa();
 
 app.use(function *(){
-  var envPort = 'Hello World - koa js' + process.env.PORT;
+  var envPort = 'Hello World - koa js :' + process.env.PORT;
   this.body = envPort;
 });
 
