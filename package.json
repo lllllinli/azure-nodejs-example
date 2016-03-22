@@ -2,13 +2,14 @@
   "name": "azure-nodejs-example",
   "version": "1.0.0",
   "description": "<html> <head>     <title>defaultdocument sample</title>     <style>         pre         {             background-color: eeeeee;         }     </style> </head> <body>     <h2>         defaultdocument</h2>     <p>         The &lt;defaultDocument&gt; element in web.config may specify a default node.js application file    that IIS will serve when the request URL does not specify any file name, e.g.    http://localhost/node/defaultdocument/.</p>     visit the <a href=\"./\">default node.js endpoint</a><br />     debug the endpoint at <a href=\"index.js/debug\" target=\"_blank\">index.js/debug</a> (requires WebKit enabled browser)<br />     <p>         <b>code [index.js]</b></p>     <pre>var http = require('http');",
-  "main": "index.js",
+  "main": "./server/index.js",
   "dependencies": {
     "koa": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node ./server/index.js"
   },
   "repository": {
     "type": "git",
