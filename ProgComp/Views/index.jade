@@ -1,0 +1,27 @@
+extends ./layout.jade
+block title
+	title Programmer Competency Matrix
+
+block content
+	h1 Programmer Competency Matrix
+	
+	div.table-responsive
+		table.table.table-striped.table-bordered#competency
+			thead
+				th
+				th
+				th Level 0
+				th Level 1
+				th Level 2
+				th Level 3
+			tbody
+				each category, cidx in levels
+					each subcategory, scidx in category.items
+						tr(data-cat=cidx)
+							if scidx==0
+								th(data-class='category', rowspan=category.items.length)= category.title
+							th(data-class='category')= subcategory.title
+							each level, idx in subcategory.items
+								td(data-class='description',data-value=idx)= level
+	
+	script(src="processor.js")

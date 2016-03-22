@@ -1,8 +1,0 @@
-.DS_Store
-.idea
-.tern-port
-build/
-node_modules/
-public/assets/
-tmp/
-coverage
