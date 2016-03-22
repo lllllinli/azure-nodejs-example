@@ -15,7 +15,7 @@ var koa = require('koa');
 var app = koa();
 
 app.use(function *(){
-  this.body = 'Hello World';
+  this.body = 'Hello World - koa js';
 });
 
 app.listen(process.env.PORT || 3000);
